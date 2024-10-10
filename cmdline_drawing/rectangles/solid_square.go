@@ -6,17 +6,15 @@ import "fmt"
 // Zeichnet ein Quadrat mit dieser Seitenlänge auf der Konsole.
 // Das Quadrat soll komplett mit `#`-Zeichen gefüllt sein.
 func DrawSolidSquare(length int) {
-
 	for row := 0; row < length; row++ {
 		for col := 0; col < length; col++ {
 			fmt.Print("#")
 		}
 		fmt.Println()
 	}
-
 }
 
-// HINWEISS
+// HINWEIS
 // - Sie können diese Aufgabe als Spezialfall der Rechtecksaufgabe in `solid.go` betrachten.
 // - Wenn Sie die Quadrat-Aufgabe hier vorher bearbeiten, dann ist sie eine Vorübung
 //   für die Rechteck-Aufgabe.

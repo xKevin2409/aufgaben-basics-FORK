@@ -8,7 +8,6 @@ import "fmt"
 // vertikal bzw. horizontal verlaufen.
 // Die Zeichen für Rand und Füllung des Rechtecks werden als Parameter erwartet.
 func DrawTriangle(length int, inner, outer string) {
-
 	for row := 0; row < length; row++ {
 		for col := 0; col <= row; col++ {
 			if col == 0 || row == length-1 || col == row {
@@ -19,8 +18,7 @@ func DrawTriangle(length int, inner, outer string) {
 		}
 		fmt.Println()
 	}
-
 }
 
-// HINWEISS
+// HINWEIS
 // - Dies ist eine Verallgemeinerung der beiden anderen Dreiecksaufgaben.

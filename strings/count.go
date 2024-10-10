@@ -2,7 +2,6 @@ package strings
 
 // Erwartet einen string s und zählt, wie oft der Buchstabe 'A' in s vorkommt.
 func CountA(s string) int {
-
 	result := 0
 	for _, char := range s {
 		if char == 'A' {
@@ -10,7 +9,6 @@ func CountA(s string) int {
 		}
 	}
 	return result
-
 }
 
 // HINWEIS
@@ -19,11 +17,9 @@ func CountA(s string) int {
 // Wenn ja, erhöhen Sie result um 1.
 // Alternativ können Sie auch die Funktion CountChar() verwenden,
 // die Sie weiter unten implementieren sollen.
-
 // Erwartet einen string s und einen Buchstaben c.
 // Zählt, wie oft c in s vorkommt.
 func CountChar(s string, c rune) int {
-
 	result := 0
 	for _, char := range s {
 		if char == c {
@@ -31,7 +27,6 @@ func CountChar(s string, c rune) int {
 		}
 	}
 	return result
-
 }
 
 // HINWEIS
