@@ -1,23 +1,14 @@
 package lists
 
-import "aufgaben-basics/calculations/numbers"
-
 // Erwartet eine Liste von Zahlen und gibt das Minimum zurück.
 // Wenn die Liste leer ist, wird 0 zurückgegeben.
 // ZUSATZBEDINGUNG: Diese Funktion darf keine Schleife verwenden.
 func MinListRecursive(nums []int) int {
-
-	if len(nums) == 0 {
-		return 0
-	}
-	if len(nums) == 1 {
-		return nums[0]
-	}
-	return numbers.Min(nums[0], MinListRecursive(nums[1:]))
-
+	// TODO
+	return 0
 }
 
-// HINWEISS
+// HINWEIS
 // - Vergleichen Sie jeweils das erste Element mit dem Minimum der restlichen Elemente.
 //   Sie können dazu, die Funktion `Min` verwenden, falls Sie Sie bereits implementiert haben.
 // - Um das Minimum der restlichen Elemente zu berechnen, rufen Sie die Funktion
