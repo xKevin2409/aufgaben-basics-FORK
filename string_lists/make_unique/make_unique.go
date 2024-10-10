@@ -5,7 +5,7 @@ import "fmt"
 // Erwartet eine Liste von Strings.
 // Hängt Zahlen an alle mehrfach vorkommenden Strings an, um sie eindeutig zu machen.
 func MakeUnique(strings []string) {
-	// SOLUTION
+
 	for i, s := range strings {
 		count := 2
 		for j := i + 1; j < len(strings); j++ {
@@ -15,10 +15,10 @@ func MakeUnique(strings []string) {
 			}
 		}
 	}
-	// SOLUTION_END
+
 }
 
-// HINTS
+// HINWEISS
 // - Nutzen Sie eine Schleife, um durch die Liste der Strings zu iterieren.
 // - Suchen Sie für jedes Element ab dessen Position nach weiteren Vorkommen.
 //   Zählen Sie dabei die Anzahl der Vorkommen in einer Variablen (z.B. `count`).

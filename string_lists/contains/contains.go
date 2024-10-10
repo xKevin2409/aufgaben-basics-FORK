@@ -3,17 +3,17 @@ package contains
 // Erwartet einen String und eine Liste von Strings.
 // Gibt true zurück, wenn der String in der Liste enthalten ist, ansonsten false.
 func Contains(strings []string, search string) bool {
-	// SOLUTION_BEGIN
+
 	for _, s := range strings {
 		if s == search {
 			return true
 		}
 	}
 	return false
-	// SOLUTION_END
+
 }
 
-// HINTS
+// HINWEISS
 // - Nutzen Sie eine Schleife, um durch die Liste der Strings zu iterieren.
 // - Vergleichen Sie in jedem Schleifendurchlauf das aktuelle Element mit dem gesuchten String.
 // - Wenn Sie eine Übereinstimmung finden, können Sie vorzeitig aus der Schleife ausbrechen und `true` zurückgeben.

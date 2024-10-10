@@ -8,7 +8,7 @@ package strings
 // passende öffnende Klammer gegeben hat.
 // Die Funktion soll true liefern, falls der String korrekt geklammert ist.
 func CheckParentheses(s string) bool {
-	// SOLUTION
+
 	counter := 0
 	for _, c := range s {
 		if c == '(' {
@@ -22,10 +22,10 @@ func CheckParentheses(s string) bool {
 		}
 	}
 	return counter == 0
-	// SOLUTION_END
+
 }
 
-// HINT
+// HINWEIS
 // Laufen Sie in einer for-Schleife über alle Buchstaben des Strings.
 // Jedes Mal, wenn Sie eine öffnende Klammer finden, erhöhen Sie einen counter um 1.
 // Jedes Mal, wenn Sie eine schließende Klammer finden, verringern Sie den counter um 1.

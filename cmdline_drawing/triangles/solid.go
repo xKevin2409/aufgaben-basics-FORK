@@ -8,17 +8,17 @@ import "fmt"
 // Der rechte Winkel soll links unten liegen und die Seiten sollen
 // vertikal bzw. horizontal verlaufen.
 func DrawSolidTriangle(length int) {
-	// SOLUTION
+
 	for row := 0; row < length; row++ {
 		for col := 0; col <= row; col++ {
 			fmt.Print("#")
 		}
 		fmt.Println()
 	}
-	// SOLUTION_END
+
 }
 
-// HINTS
+// HINWEISS
 // - Diese Aufgabe ähnelt der zum Zeichnen eines gefüllten Rechtecks.
 // - Nutzen Sie - wie dort - zwei geschatelte Schleifen, um die Zeilen und Spalten des Dreiecks zu durchlaufen.
 // - Die innere Schleife darf aber dieses Mal nicht in jedem Schritt bis zum Ende der Zeile laufen.

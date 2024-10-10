@@ -3,7 +3,7 @@ package lists
 // Erwartet eine Liste von Zahlen und gibt das Minimum zurück.
 // Wenn die Liste leer ist, wird 0 zurückgegeben.
 func MinList(nums []int) int {
-	// SOLUTION_BEGIN
+
 	if len(nums) == 0 {
 		return 0
 	}
@@ -14,10 +14,10 @@ func MinList(nums []int) int {
 		}
 	}
 	return min
-	// SOLUTION_END
+
 }
 
-// HINTS
+// HINWEISS
 // - Verwenden Sie eine Hilfsvariable, um das bisher kleinste Element zu speichern.
 //   Diese Variable können Sie mit dem ersten Element der Liste initialisieren.
 // - Nutzen Sie dann eine Schleife, um die Liste zu durchlaufen.

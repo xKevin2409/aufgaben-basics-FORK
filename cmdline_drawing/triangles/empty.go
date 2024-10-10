@@ -9,7 +9,7 @@ import "fmt"
 // vertikal bzw. horizontal verlaufen.
 // Der Rand des Dreiecks soll aus `#`-Zeichen bestehen, der Innenraum soll leer sein.
 func DrawEmptyTriangle(length int) {
-	// SOLUTION
+
 	for row := 0; row < length; row++ {
 		for col := 0; col <= row; col++ {
 			if col == 0 || row == length-1 || col == row {
@@ -20,10 +20,10 @@ func DrawEmptyTriangle(length int) {
 		}
 		fmt.Println()
 	}
-	// SOLUTION_END
+
 }
 
-// HINTS
+// HINWEISS
 // - Nutzen Sie zwei ineinander geschachtelte Schleifen, um die Zeilen und Spalten des Dreiecks zu durchlaufen.
 // - Die äußere Schleife sollte die Zeilen durchlaufen, die innere Schleife die Spalten.
 // - Prüfen Sie in jeder Iteration, ob Sie sich am Rand befinden.
