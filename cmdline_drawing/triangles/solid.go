@@ -11,7 +11,6 @@ func DrawSolidTriangle(length int) {
 	//TODO
 
 	for i := 1; i < length+1; i++ {
-		//rahmen := []string{}
 		rahmen := ""
 		for j := i; j > 0; j-- {
 
