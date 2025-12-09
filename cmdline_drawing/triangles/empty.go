@@ -13,11 +13,22 @@ func DrawEmptyTriangle(length int) {
 
 	for i := 1; i < length+1; i++ {
 		rahmen := ""
-		for j := i; j > 0; j-- {
-
+		if i == 1 {
 			rahmen += "#"
-
+		} else if i == 2 {
+			rahmen += "##"
+		} else if i == length {
+			for k := length; k > 0; k-- {
+				rahmen += "#"
+			}
+		} else {
+			rahmen += "#"
+			for j := i; j > 2; j-- {
+				rahmen += " "
+			}
+			rahmen += "#"
 		}
+
 		fmt.Println(rahmen)
 	}
 }

@@ -9,15 +9,23 @@ import "fmt"
 // vertikal bzw. horizontal verlaufen.
 func DrawSolidTriangle(length int) {
 	//TODO
-
-	for i := 1; i < length+1; i++ {
-		rahmen := ""
-		for j := i; j > 0; j-- {
-
-			rahmen += "#"
+	for i := 0; i < length; i++ {
+		for j := -1; j < i; j++ {
+			fmt.Print("#")
 
 		}
-		fmt.Println(rahmen)
+		fmt.Println("")
+
 	}
 
 }
+
+// for i := 1; i < length+1; i++ {
+// 	rahmen := ""
+// 	for j := i; j > 0; j-- {
+
+// 		rahmen += "#"
+
+// 	}
+// 	fmt.Println(rahmen)
+// }
